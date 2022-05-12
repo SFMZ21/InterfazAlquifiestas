@@ -35,11 +35,6 @@
             this.btn_max = new System.Windows.Forms.PictureBox();
             this.btn_cerrar = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_estado = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -58,11 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_max)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).BeginInit();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,11 +129,6 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.MenuVertical.Controls.Add(this.pictureBox2);
-            this.MenuVertical.Controls.Add(this.pictureBox6);
-            this.MenuVertical.Controls.Add(this.pictureBox5);
-            this.MenuVertical.Controls.Add(this.pictureBox4);
-            this.MenuVertical.Controls.Add(this.pictureBox3);
             this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Controls.Add(this.btn_estado);
             this.MenuVertical.Controls.Add(this.panel4);
@@ -160,62 +145,7 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(270, 568);
             this.MenuVertical.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(30, 122);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(30, 470);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(51, 70);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(30, 382);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(51, 70);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(30, 295);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(51, 70);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(30, 208);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 70);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.btn_clientes_Click);
+            this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
             // panel5
             // 
@@ -232,17 +162,21 @@
             // 
             this.btn_estado.AutoSize = true;
             this.btn_estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.btn_estado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_estado.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
             this.btn_estado.FlatAppearance.BorderSize = 0;
             this.btn_estado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_estado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_estado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_estado.ForeColor = System.Drawing.Color.White;
+            this.btn_estado.Image = ((System.Drawing.Image)(resources.GetObject("btn_estado.Image")));
+            this.btn_estado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_estado.Location = new System.Drawing.Point(30, 470);
             this.btn_estado.Name = "btn_estado";
+            this.btn_estado.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_estado.Size = new System.Drawing.Size(240, 70);
             this.btn_estado.TabIndex = 4;
-            this.btn_estado.Text = "Estado de Cuenta";
+            this.btn_estado.Text = "     Estado de Cuenta";
             this.btn_estado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_estado.UseVisualStyleBackColor = false;
             this.btn_estado.Click += new System.EventHandler(this.btn_estado_Click);
@@ -278,11 +212,13 @@
             this.btn_inventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_inventario.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_inventario.ForeColor = System.Drawing.Color.White;
+            this.btn_inventario.Image = ((System.Drawing.Image)(resources.GetObject("btn_inventario.Image")));
+            this.btn_inventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_inventario.Location = new System.Drawing.Point(30, 382);
             this.btn_inventario.Name = "btn_inventario";
             this.btn_inventario.Size = new System.Drawing.Size(240, 70);
             this.btn_inventario.TabIndex = 2;
-            this.btn_inventario.Text = "Inventario";
+            this.btn_inventario.Text = "  Inventario";
             this.btn_inventario.UseVisualStyleBackColor = false;
             this.btn_inventario.Click += new System.EventHandler(this.btn_inventario_Click);
             // 
@@ -306,11 +242,13 @@
             this.btn_mobiliario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mobiliario.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_mobiliario.ForeColor = System.Drawing.Color.White;
+            this.btn_mobiliario.Image = ((System.Drawing.Image)(resources.GetObject("btn_mobiliario.Image")));
+            this.btn_mobiliario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_mobiliario.Location = new System.Drawing.Point(30, 295);
             this.btn_mobiliario.Name = "btn_mobiliario";
             this.btn_mobiliario.Size = new System.Drawing.Size(240, 70);
             this.btn_mobiliario.TabIndex = 2;
-            this.btn_mobiliario.Text = "Mobiliario";
+            this.btn_mobiliario.Text = "  Mobiliario";
             this.btn_mobiliario.UseVisualStyleBackColor = false;
             this.btn_mobiliario.Click += new System.EventHandler(this.btn_mobiliario_Click);
             // 
@@ -324,6 +262,7 @@
             this.btn_pedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_pedidos.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_pedidos.ForeColor = System.Drawing.Color.White;
+            this.btn_pedidos.Image = ((System.Drawing.Image)(resources.GetObject("btn_pedidos.Image")));
             this.btn_pedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_pedidos.Location = new System.Drawing.Point(30, 208);
             this.btn_pedidos.Name = "btn_pedidos";
@@ -356,6 +295,7 @@
             this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clientes.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_clientes.ForeColor = System.Drawing.Color.White;
+            this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
             this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_clientes.Location = new System.Drawing.Point(30, 122);
             this.btn_clientes.Name = "btn_clientes";
@@ -383,7 +323,9 @@
             // 
             // Contenedor
             // 
+            this.Contenedor.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Contenedor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Contenedor.Location = new System.Drawing.Point(270, 35);
             this.Contenedor.Name = "Contenedor";
             this.Contenedor.Size = new System.Drawing.Size(1012, 568);
@@ -398,8 +340,11 @@
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.Titulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Titulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).EndInit();
@@ -407,11 +352,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).EndInit();
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -437,10 +377,5 @@
         private Panel panel2;
         private Panel panel1;
         private Button btn_clientes;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
     }
 }
