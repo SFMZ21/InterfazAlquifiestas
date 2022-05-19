@@ -34,10 +34,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.C_Clientes = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.ContenedorClientes.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.C_Clientes.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -66,7 +66,7 @@
             this.ContenedorClientes.Controls.Add(this.button2);
             this.ContenedorClientes.Controls.Add(this.button3);
             this.ContenedorClientes.Controls.Add(this.button4);
-            this.ContenedorClientes.Controls.Add(this.panel1);
+            this.ContenedorClientes.Controls.Add(this.C_Clientes);
             this.ContenedorClientes.Controls.Add(this.button1);
             this.ContenedorClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContenedorClientes.Location = new System.Drawing.Point(0, 0);
@@ -127,14 +127,17 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // C_Clientes
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 117);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(992, 457);
-            this.panel1.TabIndex = 1;
+            this.C_Clientes.AutoSize = true;
+            this.C_Clientes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.C_Clientes.Controls.Add(this.label1);
+            this.C_Clientes.Location = new System.Drawing.Point(12, 99);
+            this.C_Clientes.Name = "C_Clientes";
+            this.C_Clientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.C_Clientes.Size = new System.Drawing.Size(992, 492);
+            this.C_Clientes.TabIndex = 1;
+            this.C_Clientes.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -151,12 +154,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 603);
+            this.ControlBox = false;
             this.Controls.Add(this.ContenedorClientes);
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.ContenedorClientes.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.ContenedorClientes.PerformLayout();
+            this.C_Clientes.ResumeLayout(false);
+            this.C_Clientes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,6 +175,6 @@
         private Button button3;
         private Button button4;
         private Label label1;
-        private Panel panel1;
+        private Panel C_Clientes;
     }
 }

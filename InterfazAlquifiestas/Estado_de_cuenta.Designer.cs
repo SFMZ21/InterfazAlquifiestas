@@ -58,7 +58,7 @@
             this.btn_generar_estado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_generar_estado.Image = ((System.Drawing.Image)(resources.GetObject("btn_generar_estado.Image")));
             this.btn_generar_estado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_generar_estado.Location = new System.Drawing.Point(315, 462);
+            this.btn_generar_estado.Location = new System.Drawing.Point(304, 471);
             this.btn_generar_estado.Name = "btn_generar_estado";
             this.btn_generar_estado.Size = new System.Drawing.Size(451, 81);
             this.btn_generar_estado.TabIndex = 12;
@@ -91,6 +91,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 603);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Estado_de_cuenta";
             this.Text = "Estado_de_cuenta";
             this.panel1.ResumeLayout(false);

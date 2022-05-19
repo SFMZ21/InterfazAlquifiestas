@@ -31,28 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Titulo = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_restaurar = new System.Windows.Forms.PictureBox();
-            this.btn_min = new System.Windows.Forms.PictureBox();
-            this.btn_max = new System.Windows.Forms.PictureBox();
-            this.btn_cerrar = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btn_restaurar_login = new System.Windows.Forms.PictureBox();
+            this.btn_max_login = new System.Windows.Forms.PictureBox();
+            this.btn_min_log = new System.Windows.Forms.PictureBox();
+            this.btn_cerrar_login = new System.Windows.Forms.PictureBox();
+            this.usuario = new System.Windows.Forms.TextBox();
+            this.contra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_ingresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Titulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_min)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_max)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar_login)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_max_login)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_min_log)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar_login)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -64,128 +58,91 @@
             this.pictureBox1.Size = new System.Drawing.Size(510, 524);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // Titulo
             // 
             this.Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
-            this.Titulo.Controls.Add(this.pictureBox2);
-            this.Titulo.Controls.Add(this.pictureBox3);
-            this.Titulo.Controls.Add(this.pictureBox4);
-            this.Titulo.Controls.Add(this.btn_restaurar);
-            this.Titulo.Controls.Add(this.btn_min);
-            this.Titulo.Controls.Add(this.btn_max);
-            this.Titulo.Controls.Add(this.btn_cerrar);
+            this.Titulo.Controls.Add(this.btn_restaurar_login);
+            this.Titulo.Controls.Add(this.btn_max_login);
+            this.Titulo.Controls.Add(this.btn_min_log);
+            this.Titulo.Controls.Add(this.btn_cerrar_login);
             this.Titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.Titulo.Location = new System.Drawing.Point(0, 0);
             this.Titulo.Name = "Titulo";
             this.Titulo.Size = new System.Drawing.Size(1264, 35);
             this.Titulo.TabIndex = 1;
             // 
-            // pictureBox2
+            // btn_restaurar_login
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1190, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.btn_restaurar_login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_restaurar_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_restaurar_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_restaurar_login.Image")));
+            this.btn_restaurar_login.Location = new System.Drawing.Point(1190, 3);
+            this.btn_restaurar_login.Name = "btn_restaurar_login";
+            this.btn_restaurar_login.Size = new System.Drawing.Size(35, 30);
+            this.btn_restaurar_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_restaurar_login.TabIndex = 8;
+            this.btn_restaurar_login.TabStop = false;
+            this.btn_restaurar_login.Visible = false;
+            this.btn_restaurar_login.Click += new System.EventHandler(this.btn_restaurar_login_Click);
             // 
-            // pictureBox3
+            // btn_max_login
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1149, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.btn_max_login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_max_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_max_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_max_login.Image")));
+            this.btn_max_login.Location = new System.Drawing.Point(1190, 3);
+            this.btn_max_login.Name = "btn_max_login";
+            this.btn_max_login.Size = new System.Drawing.Size(35, 30);
+            this.btn_max_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_max_login.TabIndex = 7;
+            this.btn_max_login.TabStop = false;
+            this.btn_max_login.Click += new System.EventHandler(this.btn_max_login_Click);
             // 
-            // pictureBox4
+            // btn_min_log
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1231, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
+            this.btn_min_log.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_min_log.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_min_log.Image = ((System.Drawing.Image)(resources.GetObject("btn_min_log.Image")));
+            this.btn_min_log.Location = new System.Drawing.Point(1149, 3);
+            this.btn_min_log.Name = "btn_min_log";
+            this.btn_min_log.Size = new System.Drawing.Size(35, 30);
+            this.btn_min_log.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_min_log.TabIndex = 5;
+            this.btn_min_log.TabStop = false;
+            this.btn_min_log.Click += new System.EventHandler(this.btn_min_log_Click);
             // 
-            // btn_restaurar
+            // btn_cerrar_login
             // 
-            this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_restaurar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btn_restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("btn_restaurar.Image")));
-            this.btn_restaurar.Location = new System.Drawing.Point(2272, 3);
-            this.btn_restaurar.Name = "btn_restaurar";
-            this.btn_restaurar.Size = new System.Drawing.Size(35, 30);
-            this.btn_restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_restaurar.TabIndex = 3;
-            this.btn_restaurar.TabStop = false;
-            this.btn_restaurar.Visible = false;
+            this.btn_cerrar_login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cerrar_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cerrar_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar_login.Image")));
+            this.btn_cerrar_login.Location = new System.Drawing.Point(1231, 2);
+            this.btn_cerrar_login.Name = "btn_cerrar_login";
+            this.btn_cerrar_login.Size = new System.Drawing.Size(30, 30);
+            this.btn_cerrar_login.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_cerrar_login.TabIndex = 4;
+            this.btn_cerrar_login.TabStop = false;
+            this.btn_cerrar_login.Click += new System.EventHandler(this.btn_cerrar_login_Click);
             // 
-            // btn_min
+            // usuario
             // 
-            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_min.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btn_min.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_min.Image = ((System.Drawing.Image)(resources.GetObject("btn_min.Image")));
-            this.btn_min.Location = new System.Drawing.Point(2231, 3);
-            this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(35, 30);
-            this.btn_min.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_min.TabIndex = 2;
-            this.btn_min.TabStop = false;
+            this.usuario.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.usuario.Location = new System.Drawing.Point(172, 214);
+            this.usuario.Name = "usuario";
+            this.usuario.Size = new System.Drawing.Size(371, 51);
+            this.usuario.TabIndex = 2;
+            this.usuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btn_max
+            // contra
             // 
-            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_max.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btn_max.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_max.Image = ((System.Drawing.Image)(resources.GetObject("btn_max.Image")));
-            this.btn_max.Location = new System.Drawing.Point(2272, 2);
-            this.btn_max.Name = "btn_max";
-            this.btn_max.Size = new System.Drawing.Size(35, 30);
-            this.btn_max.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_max.TabIndex = 1;
-            this.btn_max.TabStop = false;
-            // 
-            // btn_cerrar
-            // 
-            this.btn_cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_cerrar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(2313, 2);
-            this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(30, 30);
-            this.btn_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_cerrar.TabIndex = 0;
-            this.btn_cerrar.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(172, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 51);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(172, 325);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 51);
-            this.textBox2.TabIndex = 3;
+            this.contra.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.contra.Location = new System.Drawing.Point(172, 325);
+            this.contra.Name = "contra";
+            this.contra.PasswordChar = '*';
+            this.contra.Size = new System.Drawing.Size(371, 51);
+            this.contra.TabIndex = 3;
             // 
             // label1
             // 
@@ -241,6 +198,7 @@
             this.btn_ingresar.TabIndex = 9;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseVisualStyleBackColor = false;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
             // Login
             // 
@@ -252,24 +210,21 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.contra);
+            this.Controls.Add(this.usuario);
             this.Controls.Add(this.Titulo);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
-            this.Opacity = 0.8D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Titulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_min)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_max)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar_login)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_max_login)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_min_log)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cerrar_login)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,18 +234,15 @@
 
         private PictureBox pictureBox1;
         private Panel Titulo;
-        private PictureBox btn_restaurar;
-        private PictureBox btn_min;
-        private PictureBox btn_max;
-        private PictureBox btn_cerrar;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private PictureBox btn_min_log;
+        private PictureBox btn_cerrar_login;
+        private TextBox usuario;
+        private TextBox contra;
         private Label label1;
         private Label label3;
         private Label label4;
         private Button btn_ingresar;
+        private PictureBox btn_max_login;
+        private PictureBox btn_restaurar_login;
     }
 }

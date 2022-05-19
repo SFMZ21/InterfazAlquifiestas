@@ -20,7 +20,7 @@ namespace InterfazAlquifiestas
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            abrirForm(new AgregarCliente());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,6 +41,24 @@ namespace InterfazAlquifiestas
         private void button2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+        void abrirForm(Form Form)
+        {
+            while (C_Clientes.Controls.Count > 0)
+            {
+                C_Clientes.Controls.RemoveAt(0);
+            }
+            Form formHijo = Form;
+            Form.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            C_Clientes.Controls.Add(formHijo);
+            formHijo.Show();
         }
     }
 }
