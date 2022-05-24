@@ -40,7 +40,7 @@ namespace InterfazAlquifiestas
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
+            abrirForm(new EditarCliente());
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

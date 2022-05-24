@@ -16,5 +16,28 @@ namespace InterfazAlquifiestas
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            abrirForm(new AgregarPedido());
+        }
+        void abrirForm(Form Form)
+        {
+            while (C_Pedidos.Controls.Count > 0)
+            {
+                C_Pedidos.Controls.RemoveAt(0);
+            }
+            Form formHijo = Form;
+            Form.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            C_Pedidos.Controls.Add(formHijo);
+            formHijo.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            abrirForm(new EditarPedido());
+        }
     }
 }

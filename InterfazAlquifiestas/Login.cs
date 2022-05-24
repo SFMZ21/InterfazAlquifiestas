@@ -101,5 +101,10 @@ namespace InterfazAlquifiestas
         {
 
         }
+
+        private void contra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

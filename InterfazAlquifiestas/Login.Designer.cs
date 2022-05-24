@@ -143,6 +143,7 @@
             this.contra.PasswordChar = '*';
             this.contra.Size = new System.Drawing.Size(371, 51);
             this.contra.TabIndex = 3;
+            this.contra.TextChanged += new System.EventHandler(this.contra_TextChanged);
             // 
             // label1
             // 

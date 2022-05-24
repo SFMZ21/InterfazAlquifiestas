@@ -34,12 +34,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.C_Pedidos = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.ContenedorClientes.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.C_Pedidos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,7 +57,7 @@
             this.ContenedorClientes.Controls.Add(this.button2);
             this.ContenedorClientes.Controls.Add(this.button3);
             this.ContenedorClientes.Controls.Add(this.button4);
-            this.ContenedorClientes.Controls.Add(this.panel2);
+            this.ContenedorClientes.Controls.Add(this.C_Pedidos);
             this.ContenedorClientes.Controls.Add(this.button1);
             this.ContenedorClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContenedorClientes.Location = new System.Drawing.Point(0, 0);
@@ -81,6 +81,7 @@
             this.button2.Text = "Editar Pedido";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -116,14 +117,14 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // C_Pedidos
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(10, 109);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(994, 457);
-            this.panel2.TabIndex = 1;
+            this.C_Pedidos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.C_Pedidos.Controls.Add(this.label1);
+            this.C_Pedidos.Location = new System.Drawing.Point(10, 109);
+            this.C_Pedidos.Name = "C_Pedidos";
+            this.C_Pedidos.Size = new System.Drawing.Size(994, 457);
+            this.C_Pedidos.TabIndex = 1;
             // 
             // label1
             // 
@@ -151,6 +152,7 @@
             this.button1.Text = "Crear Pedido";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Pedidos
             // 
@@ -163,8 +165,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ContenedorClientes.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.C_Pedidos.ResumeLayout(false);
+            this.C_Pedidos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -176,7 +178,7 @@
         private Button button2;
         private Button button3;
         private Button button4;
-        private Panel panel2;
+        private Panel C_Pedidos;
         private Label label1;
         private Button button1;
     }
