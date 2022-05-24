@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.ContenedorClientes = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.C_Clientes = new System.Windows.Forms.Panel();
             this.dgv_Clientes = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button4 = new System.Windows.Forms.Button();
             this.ContenedorClientes.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.C_Clientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Clientes)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ContenedorClientes
@@ -53,6 +54,60 @@
             this.ContenedorClientes.Name = "ContenedorClientes";
             this.ContenedorClientes.Size = new System.Drawing.Size(1044, 603);
             this.ContenedorClientes.TabIndex = 4;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.Controls.Add(this.C_Clientes, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 93);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1044, 510);
+            this.tableLayoutPanel2.TabIndex = 3;
+            // 
+            // C_Clientes
+            // 
+            this.C_Clientes.AutoSize = true;
+            this.C_Clientes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.C_Clientes.Controls.Add(this.dgv_Clientes);
+            this.C_Clientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.C_Clientes.Location = new System.Drawing.Point(107, 3);
+            this.C_Clientes.Name = "C_Clientes";
+            this.C_Clientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.C_Clientes.Size = new System.Drawing.Size(829, 484);
+            this.C_Clientes.TabIndex = 1;
+            // 
+            // dgv_Clientes
+            // 
+            this.dgv_Clientes.AllowUserToAddRows = false;
+            this.dgv_Clientes.AllowUserToDeleteRows = false;
+            this.dgv_Clientes.AllowUserToResizeRows = false;
+            this.dgv_Clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Clientes.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Clientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Clientes.Enabled = false;
+            this.dgv_Clientes.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Clientes.MultiSelect = false;
+            this.dgv_Clientes.Name = "dgv_Clientes";
+            this.dgv_Clientes.RowHeadersWidth = 51;
+            this.dgv_Clientes.RowTemplate.Height = 29;
+            this.dgv_Clientes.Size = new System.Drawing.Size(829, 484);
+            this.dgv_Clientes.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -88,45 +143,6 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // C_Clientes
-            // 
-            this.C_Clientes.AutoSize = true;
-            this.C_Clientes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.C_Clientes.Controls.Add(this.dgv_Clientes);
-            this.C_Clientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.C_Clientes.Location = new System.Drawing.Point(107, 3);
-            this.C_Clientes.Name = "C_Clientes";
-            this.C_Clientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.C_Clientes.Size = new System.Drawing.Size(829, 504);
-            this.C_Clientes.TabIndex = 1;
-            // 
-            // dgv_Clientes
-            // 
-            this.dgv_Clientes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgv_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Clientes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_Clientes.Location = new System.Drawing.Point(0, 0);
-            this.dgv_Clientes.Name = "dgv_Clientes";
-            this.dgv_Clientes.RowHeadersWidth = 51;
-            this.dgv_Clientes.RowTemplate.Height = 29;
-            this.dgv_Clientes.Size = new System.Drawing.Size(829, 504);
-            this.dgv_Clientes.TabIndex = 0;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.C_Clientes, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 93);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1044, 510);
-            this.tableLayoutPanel2.TabIndex = 3;
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -137,11 +153,11 @@
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.ContenedorClientes.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.C_Clientes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Clientes)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.C_Clientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Clientes)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,9 +166,9 @@
         #endregion
         private Panel ContenedorClientes;
         private Button button4;
-        private Panel C_Clientes;
         private TableLayoutPanel tableLayoutPanel1;
-        private DataGridView dgv_Clientes;
         private TableLayoutPanel tableLayoutPanel2;
+        private Panel C_Clientes;
+        private DataGridView dgv_Clientes;
     }
 }
