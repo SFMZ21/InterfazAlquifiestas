@@ -17,25 +17,9 @@ namespace InterfazAlquifiestas
             InitializeComponent();
             
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             abrirForm(new AgregarCliente());
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -43,10 +27,6 @@ namespace InterfazAlquifiestas
             abrirForm(new EditarCliente());
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
         void abrirForm(Form Form)
         {
             while (C_Clientes.Controls.Count > 0)
@@ -59,6 +39,16 @@ namespace InterfazAlquifiestas
             formHijo.Dock = DockStyle.Fill;
             C_Clientes.Controls.Add(formHijo);
             formHijo.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
