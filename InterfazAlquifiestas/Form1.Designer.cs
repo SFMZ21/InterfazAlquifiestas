@@ -145,7 +145,6 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(270, 568);
             this.MenuVertical.TabIndex = 1;
-            this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
             // panel5
             // 
@@ -156,7 +155,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(30, 70);
             this.panel5.TabIndex = 5;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // btn_estado
             // 
@@ -190,7 +188,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(30, 70);
             this.panel4.TabIndex = 3;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel3
             // 
@@ -201,7 +198,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(30, 70);
             this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // btn_inventario
             // 
@@ -231,7 +227,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(30, 70);
             this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btn_mobiliario
             // 
@@ -281,7 +276,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(30, 70);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btn_clientes
             // 
@@ -319,7 +313,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Contenedor
             // 
@@ -330,7 +323,6 @@
             this.Contenedor.Name = "Contenedor";
             this.Contenedor.Size = new System.Drawing.Size(1012, 568);
             this.Contenedor.TabIndex = 2;
-            this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
             // 
             // Form1
             // 
@@ -344,7 +336,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Titulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).EndInit();
