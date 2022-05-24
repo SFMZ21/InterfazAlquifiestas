@@ -58,7 +58,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(510, 524);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // Titulo
             // 
@@ -133,7 +132,6 @@
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(371, 51);
             this.usuario.TabIndex = 2;
-            this.usuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contra
             // 
@@ -143,7 +141,6 @@
             this.contra.PasswordChar = '*';
             this.contra.Size = new System.Drawing.Size(371, 51);
             this.contra.TabIndex = 3;
-            this.contra.TextChanged += new System.EventHandler(this.contra_TextChanged);
             // 
             // label1
             // 
@@ -155,7 +152,6 @@
             this.label1.Size = new System.Drawing.Size(330, 59);
             this.label1.TabIndex = 4;
             this.label1.Text = "Inicio de sesión";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -219,7 +215,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Titulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar_login)).EndInit();
