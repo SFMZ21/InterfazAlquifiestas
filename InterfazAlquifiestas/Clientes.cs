@@ -80,6 +80,7 @@ namespace InterfazAlquifiestas
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            abrirForm(new AgregarCliente());
             /*
             string Nombre = Interaction.InputBox(
                 "Nombre del Cliente", "Insertar Cliente", "", 500, 500);

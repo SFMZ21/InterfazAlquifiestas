@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarCliente));
             this.C_Add_Clientes = new System.Windows.Forms.Panel();
-            this.btn_ingresar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.DPI = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.C_Add_Clientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // 
             this.C_Add_Clientes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.C_Add_Clientes.Controls.Add(this.pictureBox1);
-            this.C_Add_Clientes.Controls.Add(this.btn_ingresar);
+            this.C_Add_Clientes.Controls.Add(this.btn_agregar);
             this.C_Add_Clientes.Controls.Add(this.DPI);
             this.C_Add_Clientes.Controls.Add(this.label2);
             this.C_Add_Clientes.Controls.Add(this.label1);
@@ -62,27 +62,37 @@
             this.C_Add_Clientes.Size = new System.Drawing.Size(992, 492);
             this.C_Add_Clientes.TabIndex = 0;
             // 
-            // btn_ingresar
+            // pictureBox1
             // 
-            this.btn_ingresar.AutoSize = true;
-            this.btn_ingresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
-            this.btn_ingresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_ingresar.CausesValidation = false;
-            this.btn_ingresar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
-            this.btn_ingresar.FlatAppearance.BorderSize = 0;
-            this.btn_ingresar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
-            this.btn_ingresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ingresar.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ingresar.ForeColor = System.Drawing.Color.White;
-            this.btn_ingresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ingresar.Location = new System.Drawing.Point(323, 350);
-            this.btn_ingresar.Name = "btn_ingresar";
-            this.btn_ingresar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_ingresar.Size = new System.Drawing.Size(340, 60);
-            this.btn_ingresar.TabIndex = 10;
-            this.btn_ingresar.Text = "Agregar";
-            this.btn_ingresar.UseVisualStyleBackColor = false;
-            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(717, 103);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 286);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.AutoSize = true;
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(93)))), ((int)(((byte)(160)))));
+            this.btn_agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_agregar.CausesValidation = false;
+            this.btn_agregar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btn_agregar.FlatAppearance.BorderSize = 0;
+            this.btn_agregar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agregar.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_agregar.ForeColor = System.Drawing.Color.White;
+            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agregar.Location = new System.Drawing.Point(323, 350);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_agregar.Size = new System.Drawing.Size(340, 60);
+            this.btn_agregar.TabIndex = 10;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
             // DPI
             // 
@@ -164,16 +174,6 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(717, 103);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 286);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // AgregarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -200,7 +200,7 @@
         private Label DPI;
         private Label label2;
         private Label label1;
-        private Button btn_ingresar;
+        private Button btn_agregar;
         private PictureBox pictureBox1;
     }
 }
