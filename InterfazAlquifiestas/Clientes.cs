@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.VisualBasic;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Data;
 
@@ -79,8 +80,23 @@ namespace InterfazAlquifiestas
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // Funcionalidad Pendiente
+            /*
+            string Nombre = Interaction.InputBox(
+                "Nombre del Cliente", "Insertar Cliente", "", 500, 500);
 
+            string Apellido = Interaction.InputBox(
+                "Apellido del Cliente", "Insertar Cliente", "", 500, 500);
+
+            string NoTel = Interaction.InputBox(
+                "No. de Telefono", "Insertar Cliente", "", 500, 500);
+
+            string NoDpi = Interaction.InputBox(
+                "No. de DPI", "Insertar Cliente", "", 500, 500);
+
+            MessageBox.Show(Nombre + " " + Apellido + " " + NoTel + " " + NoDpi);
+            */
         }
+
+
     }
 }
