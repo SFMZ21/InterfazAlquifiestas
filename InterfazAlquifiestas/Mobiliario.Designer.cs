@@ -56,6 +56,7 @@
             // 
             // edit_mobiliario
             // 
+<<<<<<< HEAD
             this.edit_mobiliario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.edit_mobiliario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.edit_mobiliario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -70,6 +71,22 @@
             this.edit_mobiliario.Text = "Editar";
             this.edit_mobiliario.UseVisualStyleBackColor = false;
             this.edit_mobiliario.Click += new System.EventHandler(this.button2_Click_1);
+=======
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(262, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(244, 81);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+>>>>>>> d6e7121ee10c40971705212897f55dd52819df49
             // 
             // button3
             // 

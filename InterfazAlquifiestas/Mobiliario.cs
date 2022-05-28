@@ -40,6 +40,7 @@ namespace InterfazAlquifiestas
         {
 
         }
+<<<<<<< HEAD
         void abrirForm(Form Form)
         {
             while (dgv_Mobiliario.Controls.Count > 0)
@@ -53,6 +54,8 @@ namespace InterfazAlquifiestas
             dgv_Mobiliario.Controls.Add(formHijo);
             formHijo.Show();
         }
+=======
+>>>>>>> d6e7121ee10c40971705212897f55dd52819df49
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -103,9 +106,12 @@ namespace InterfazAlquifiestas
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             abrirForm(new EditarMobiliario());
 
 
+=======
+>>>>>>> d6e7121ee10c40971705212897f55dd52819df49
             try
             {
                 int rowindex = dgv_Mobiliario.CurrentCell.RowIndex;
