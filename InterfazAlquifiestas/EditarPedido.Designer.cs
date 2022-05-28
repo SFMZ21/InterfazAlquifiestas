@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarPedido));
             this.C_Edit_Pedidos = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txb_cliente = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txb_estado = new System.Windows.Forms.TextBox();
+            this.txb_precio = new System.Windows.Forms.TextBox();
             this.btn_editar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txb_IdPedido = new System.Windows.Forms.TextBox();
+            this.txb_fecha = new System.Windows.Forms.TextBox();
+            this.txb_direc = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txb_desc = new System.Windows.Forms.TextBox();
             this.C_Edit_Pedidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,21 +55,21 @@
             this.C_Edit_Pedidos.AutoScroll = true;
             this.C_Edit_Pedidos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.C_Edit_Pedidos.Controls.Add(this.label5);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox7);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_cliente);
             this.C_Edit_Pedidos.Controls.Add(this.pictureBox1);
             this.C_Edit_Pedidos.Controls.Add(this.label4);
             this.C_Edit_Pedidos.Controls.Add(this.label3);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox6);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox5);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_estado);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_precio);
             this.C_Edit_Pedidos.Controls.Add(this.btn_editar);
             this.C_Edit_Pedidos.Controls.Add(this.ID);
             this.C_Edit_Pedidos.Controls.Add(this.label2);
             this.C_Edit_Pedidos.Controls.Add(this.label1);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox4);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox3);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox2);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_IdPedido);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_fecha);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_direc);
             this.C_Edit_Pedidos.Controls.Add(this.Nombre);
-            this.C_Edit_Pedidos.Controls.Add(this.textBox1);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_desc);
             this.C_Edit_Pedidos.Location = new System.Drawing.Point(6, 3);
             this.C_Edit_Pedidos.Name = "C_Edit_Pedidos";
             this.C_Edit_Pedidos.Size = new System.Drawing.Size(992, 492);
@@ -86,13 +86,13 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "ID Pedido";
             // 
-            // textBox7
+            // txb_cliente
             // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(545, 30);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(340, 41);
-            this.textBox7.TabIndex = 16;
+            this.txb_cliente.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_cliente.Location = new System.Drawing.Point(545, 30);
+            this.txb_cliente.Name = "txb_cliente";
+            this.txb_cliente.Size = new System.Drawing.Size(340, 41);
+            this.txb_cliente.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -126,21 +126,21 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Precio";
             // 
-            // textBox6
+            // txb_estado
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(545, 337);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(340, 41);
-            this.textBox6.TabIndex = 12;
+            this.txb_estado.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_estado.Location = new System.Drawing.Point(545, 337);
+            this.txb_estado.Name = "txb_estado";
+            this.txb_estado.Size = new System.Drawing.Size(340, 41);
+            this.txb_estado.TabIndex = 6;
             // 
-            // textBox5
+            // txb_precio
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(545, 273);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(340, 41);
-            this.textBox5.TabIndex = 11;
+            this.txb_precio.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_precio.Location = new System.Drawing.Point(545, 273);
+            this.txb_precio.Name = "txb_precio";
+            this.txb_precio.Size = new System.Drawing.Size(340, 41);
+            this.txb_precio.TabIndex = 5;
             // 
             // btn_editar
             // 
@@ -159,9 +159,10 @@
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_editar.Size = new System.Drawing.Size(226, 60);
-            this.btn_editar.TabIndex = 10;
+            this.btn_editar.TabIndex = 7;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = false;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // ID
             // 
@@ -196,29 +197,30 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Dirección";
             // 
-            // textBox4
+            // txb_IdPedido
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(71, 118);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(256, 41);
-            this.textBox4.TabIndex = 6;
+            this.txb_IdPedido.Enabled = false;
+            this.txb_IdPedido.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_IdPedido.Location = new System.Drawing.Point(71, 118);
+            this.txb_IdPedido.Name = "txb_IdPedido";
+            this.txb_IdPedido.Size = new System.Drawing.Size(256, 41);
+            this.txb_IdPedido.TabIndex = 0;
             // 
-            // textBox3
+            // txb_fecha
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(545, 210);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 41);
-            this.textBox3.TabIndex = 4;
+            this.txb_fecha.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_fecha.Location = new System.Drawing.Point(545, 210);
+            this.txb_fecha.Name = "txb_fecha";
+            this.txb_fecha.Size = new System.Drawing.Size(340, 41);
+            this.txb_fecha.TabIndex = 4;
             // 
-            // textBox2
+            // txb_direc
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(545, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 41);
-            this.textBox2.TabIndex = 2;
+            this.txb_direc.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_direc.Location = new System.Drawing.Point(545, 149);
+            this.txb_direc.Name = "txb_direc";
+            this.txb_direc.Size = new System.Drawing.Size(340, 41);
+            this.txb_direc.TabIndex = 3;
             // 
             // Nombre
             // 
@@ -231,13 +233,13 @@
             this.Nombre.TabIndex = 1;
             this.Nombre.Text = "Descripción";
             // 
-            // textBox1
+            // txb_desc
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(545, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 41);
-            this.textBox1.TabIndex = 0;
+            this.txb_desc.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_desc.Location = new System.Drawing.Point(545, 88);
+            this.txb_desc.Name = "txb_desc";
+            this.txb_desc.Size = new System.Drawing.Size(340, 41);
+            this.txb_desc.TabIndex = 2;
             // 
             // EditarPedido
             // 
@@ -273,5 +275,12 @@
         private TextBox textBox2;
         private Label Nombre;
         private TextBox textBox1;
+        private TextBox txb_cliente;
+        private TextBox txb_estado;
+        private TextBox txb_precio;
+        private TextBox txb_IdPedido;
+        private TextBox txb_fecha;
+        private TextBox txb_direc;
+        private TextBox txb_desc;
     }
 }

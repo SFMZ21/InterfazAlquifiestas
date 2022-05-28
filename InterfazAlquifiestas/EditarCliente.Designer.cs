@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarCliente));
             this.C_Edit_Clientes = new System.Windows.Forms.Panel();
+            this.id = new System.Windows.Forms.Label();
+            this.txb_Id = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_editar = new System.Windows.Forms.Button();
             this.DPI = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txb_DPI = new System.Windows.Forms.TextBox();
+            this.txb_Tel = new System.Windows.Forms.TextBox();
+            this.txb_Apellido = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.id = new System.Windows.Forms.Label();
+            this.txb_Nombre = new System.Windows.Forms.TextBox();
             this.C_Edit_Clientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,21 +50,41 @@
             // 
             this.C_Edit_Clientes.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.C_Edit_Clientes.Controls.Add(this.id);
-            this.C_Edit_Clientes.Controls.Add(this.textBox5);
+            this.C_Edit_Clientes.Controls.Add(this.txb_Id);
             this.C_Edit_Clientes.Controls.Add(this.pictureBox1);
             this.C_Edit_Clientes.Controls.Add(this.btn_editar);
             this.C_Edit_Clientes.Controls.Add(this.DPI);
             this.C_Edit_Clientes.Controls.Add(this.label2);
             this.C_Edit_Clientes.Controls.Add(this.label1);
-            this.C_Edit_Clientes.Controls.Add(this.textBox4);
-            this.C_Edit_Clientes.Controls.Add(this.textBox3);
-            this.C_Edit_Clientes.Controls.Add(this.textBox2);
+            this.C_Edit_Clientes.Controls.Add(this.txb_DPI);
+            this.C_Edit_Clientes.Controls.Add(this.txb_Tel);
+            this.C_Edit_Clientes.Controls.Add(this.txb_Apellido);
             this.C_Edit_Clientes.Controls.Add(this.Nombre);
-            this.C_Edit_Clientes.Controls.Add(this.textBox1);
+            this.C_Edit_Clientes.Controls.Add(this.txb_Nombre);
             this.C_Edit_Clientes.Location = new System.Drawing.Point(6, 3);
             this.C_Edit_Clientes.Name = "C_Edit_Clientes";
             this.C_Edit_Clientes.Size = new System.Drawing.Size(992, 492);
             this.C_Edit_Clientes.TabIndex = 1;
+            // 
+            // id
+            // 
+            this.id.AutoSize = true;
+            this.id.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.id.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.id.Location = new System.Drawing.Point(140, 61);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(148, 34);
+            this.id.TabIndex = 13;
+            this.id.Text = "ID Cliente";
+            // 
+            // txb_Id
+            // 
+            this.txb_Id.Enabled = false;
+            this.txb_Id.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_Id.Location = new System.Drawing.Point(79, 109);
+            this.txb_Id.Name = "txb_Id";
+            this.txb_Id.Size = new System.Drawing.Size(245, 41);
+            this.txb_Id.TabIndex = 12;
             // 
             // pictureBox1
             // 
@@ -96,6 +116,7 @@
             this.btn_editar.TabIndex = 10;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = false;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // DPI
             // 
@@ -130,29 +151,29 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Apellido";
             // 
-            // textBox4
+            // txb_DPI
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(548, 268);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(340, 41);
-            this.textBox4.TabIndex = 6;
+            this.txb_DPI.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_DPI.Location = new System.Drawing.Point(548, 268);
+            this.txb_DPI.Name = "txb_DPI";
+            this.txb_DPI.Size = new System.Drawing.Size(340, 41);
+            this.txb_DPI.TabIndex = 6;
             // 
-            // textBox3
+            // txb_Tel
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(548, 192);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 41);
-            this.textBox3.TabIndex = 4;
+            this.txb_Tel.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_Tel.Location = new System.Drawing.Point(548, 192);
+            this.txb_Tel.Name = "txb_Tel";
+            this.txb_Tel.Size = new System.Drawing.Size(340, 41);
+            this.txb_Tel.TabIndex = 4;
             // 
-            // textBox2
+            // txb_Apellido
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(548, 121);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 41);
-            this.textBox2.TabIndex = 2;
+            this.txb_Apellido.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_Apellido.Location = new System.Drawing.Point(548, 121);
+            this.txb_Apellido.Name = "txb_Apellido";
+            this.txb_Apellido.Size = new System.Drawing.Size(340, 41);
+            this.txb_Apellido.TabIndex = 2;
             // 
             // Nombre
             // 
@@ -165,32 +186,13 @@
             this.Nombre.TabIndex = 1;
             this.Nombre.Text = "Nombre";
             // 
-            // textBox1
+            // txb_Nombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(548, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 41);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(79, 109);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(245, 41);
-            this.textBox5.TabIndex = 12;
-            // 
-            // id
-            // 
-            this.id.AutoSize = true;
-            this.id.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.id.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.id.Location = new System.Drawing.Point(140, 61);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(148, 34);
-            this.id.TabIndex = 13;
-            this.id.Text = "ID Cliente";
+            this.txb_Nombre.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_Nombre.Location = new System.Drawing.Point(548, 56);
+            this.txb_Nombre.Name = "txb_Nombre";
+            this.txb_Nombre.Size = new System.Drawing.Size(340, 41);
+            this.txb_Nombre.TabIndex = 0;
             // 
             // EditarCliente
             // 
@@ -211,16 +213,16 @@
 
         private Panel C_Edit_Clientes;
         private Label id;
-        private TextBox textBox5;
+        private TextBox txb_Id;
         private PictureBox pictureBox1;
         private Button btn_editar;
         private Label DPI;
         private Label label2;
         private Label label1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txb_DPI;
+        private TextBox txb_Tel;
+        private TextBox txb_Apellido;
         private Label Nombre;
-        private TextBox textBox1;
+        private TextBox txb_Nombre;
     }
 }

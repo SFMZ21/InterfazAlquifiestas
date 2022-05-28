@@ -53,7 +53,7 @@ namespace InterfazAlquifiestas
 
         private void btn_clientes_Click(object sender, EventArgs e)
         {
-            abrirForm(new Clientes());
+            abrirForm(new Clientes(Contenedor));
 
         }
 

@@ -353,7 +353,7 @@
         private Panel Titulo;
         private PictureBox btn_cerrar;
         private Panel MenuVertical;
-        private Panel Contenedor;
+        public Panel Contenedor;
         private PictureBox btn_min;
         private PictureBox btn_max;
         private PictureBox btn_restaurar;

@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarPedido));
             this.C_Add_Pedidos = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txb_Estado = new System.Windows.Forms.TextBox();
+            this.txb_Precio = new System.Windows.Forms.TextBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txb_IdCliente = new System.Windows.Forms.TextBox();
+            this.txb_fechahora = new System.Windows.Forms.TextBox();
+            this.txb_direccion = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txb_descripcion = new System.Windows.Forms.TextBox();
             this.C_Add_Pedidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,21 +54,70 @@
             this.C_Add_Pedidos.Controls.Add(this.pictureBox1);
             this.C_Add_Pedidos.Controls.Add(this.label4);
             this.C_Add_Pedidos.Controls.Add(this.label3);
-            this.C_Add_Pedidos.Controls.Add(this.textBox6);
-            this.C_Add_Pedidos.Controls.Add(this.textBox5);
+            this.C_Add_Pedidos.Controls.Add(this.txb_Estado);
+            this.C_Add_Pedidos.Controls.Add(this.txb_Precio);
             this.C_Add_Pedidos.Controls.Add(this.btn_agregar);
             this.C_Add_Pedidos.Controls.Add(this.ID);
             this.C_Add_Pedidos.Controls.Add(this.label2);
             this.C_Add_Pedidos.Controls.Add(this.label1);
-            this.C_Add_Pedidos.Controls.Add(this.textBox4);
-            this.C_Add_Pedidos.Controls.Add(this.textBox3);
-            this.C_Add_Pedidos.Controls.Add(this.textBox2);
+            this.C_Add_Pedidos.Controls.Add(this.txb_IdCliente);
+            this.C_Add_Pedidos.Controls.Add(this.txb_fechahora);
+            this.C_Add_Pedidos.Controls.Add(this.txb_direccion);
             this.C_Add_Pedidos.Controls.Add(this.Nombre);
-            this.C_Add_Pedidos.Controls.Add(this.textBox1);
+            this.C_Add_Pedidos.Controls.Add(this.txb_descripcion);
             this.C_Add_Pedidos.Location = new System.Drawing.Point(6, 3);
             this.C_Add_Pedidos.Name = "C_Add_Pedidos";
             this.C_Add_Pedidos.Size = new System.Drawing.Size(992, 492);
             this.C_Add_Pedidos.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(47, 170);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(293, 280);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(435, 295);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 34);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Estado";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(438, 238);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 34);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Precio";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txb_Estado
+            // 
+            this.txb_Estado.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_Estado.Location = new System.Drawing.Point(545, 295);
+            this.txb_Estado.Name = "txb_Estado";
+            this.txb_Estado.Size = new System.Drawing.Size(340, 41);
+            this.txb_Estado.TabIndex = 5;
+            // 
+            // txb_Precio
+            // 
+            this.txb_Precio.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_Precio.Location = new System.Drawing.Point(545, 233);
+            this.txb_Precio.Name = "txb_Precio";
+            this.txb_Precio.Size = new System.Drawing.Size(340, 41);
+            this.txb_Precio.TabIndex = 4;
             // 
             // btn_agregar
             // 
@@ -87,9 +136,10 @@
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_agregar.Size = new System.Drawing.Size(226, 60);
-            this.btn_agregar.TabIndex = 10;
+            this.btn_agregar.TabIndex = 6;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // ID
             // 
@@ -124,29 +174,29 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Dirección";
             // 
-            // textBox4
+            // txb_IdCliente
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(57, 118);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(256, 41);
-            this.textBox4.TabIndex = 6;
+            this.txb_IdCliente.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_IdCliente.Location = new System.Drawing.Point(57, 118);
+            this.txb_IdCliente.Name = "txb_IdCliente";
+            this.txb_IdCliente.Size = new System.Drawing.Size(256, 41);
+            this.txb_IdCliente.TabIndex = 0;
             // 
-            // textBox3
+            // txb_fechahora
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(545, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 41);
-            this.textBox3.TabIndex = 4;
+            this.txb_fechahora.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_fechahora.Location = new System.Drawing.Point(545, 170);
+            this.txb_fechahora.Name = "txb_fechahora";
+            this.txb_fechahora.Size = new System.Drawing.Size(340, 41);
+            this.txb_fechahora.TabIndex = 3;
             // 
-            // textBox2
+            // txb_direccion
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(545, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 41);
-            this.textBox2.TabIndex = 2;
+            this.txb_direccion.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_direccion.Location = new System.Drawing.Point(545, 107);
+            this.txb_direccion.Name = "txb_direccion";
+            this.txb_direccion.Size = new System.Drawing.Size(340, 41);
+            this.txb_direccion.TabIndex = 2;
             // 
             // Nombre
             // 
@@ -160,62 +210,13 @@
             this.Nombre.Text = "Descripción";
             this.Nombre.Click += new System.EventHandler(this.Nombre_Click);
             // 
-            // textBox1
+            // txb_descripcion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(545, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 41);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(545, 233);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(340, 41);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(545, 295);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(340, 41);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(438, 238);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 34);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Precio";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(435, 295);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 34);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Estado";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 170);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(293, 280);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.txb_descripcion.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_descripcion.Location = new System.Drawing.Point(545, 46);
+            this.txb_descripcion.Name = "txb_descripcion";
+            this.txb_descripcion.Size = new System.Drawing.Size(340, 41);
+            this.txb_descripcion.TabIndex = 1;
             // 
             // AgregarPedido
             // 
@@ -249,5 +250,11 @@
         private TextBox textBox5;
         private PictureBox pictureBox1;
         private Label label4;
+        private TextBox txb_Estado;
+        private TextBox txb_Precio;
+        private TextBox txb_IdCliente;
+        private TextBox txb_fechahora;
+        private TextBox txb_direccion;
+        private TextBox txb_descripcion;
     }
 }

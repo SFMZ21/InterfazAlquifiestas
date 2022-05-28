@@ -1,50 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace InterfazAlquifiestas
 {
     public partial class AgregarCliente : Form
     {
-        public AgregarCliente()
+        public Panel Contenedor;
+        public AgregarCliente(Panel Contenedor)
         {
             InitializeComponent();
+            this.Contenedor = Contenedor;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        void abrirForm(Form Form)
         {
-
+            while (this.Contenedor.Controls.Count > 0)
+            {
+                this.Contenedor.Controls.RemoveAt(0);
+            }
+            Form formHijo = Form;
+            Form.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+            this.Contenedor.Controls.Add(formHijo);
+            formHijo.Show();
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void btn_agregar_Click(object sender, EventArgs e)
         {
+            string nombre = txb_Nombre.Text;
+            string apellido = txb_Apellido.Text;
+            string telefono = txb_Telefono.Text;
+            string Dpi = txb_DPI.Text;
 
-        }
+            var client = (nombre, apellido, telefono, Dpi);
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
+            var json = JsonConvert.SerializeObject(client);
+            var dat = new StringContent(json, Encoding.UTF8, "application/json");
+            HttpClient DataClient = new HttpClient();
+            DataClient.BaseAddress = new Uri("http://localhost:3000/");
+            HttpResponseMessage response = DataClient.PostAsync("clientes/nuevo", dat).Result;
+            var data = response.Content.ReadAsStringAsync().Result;
 
-        }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+            JObject joResponse = JObject.Parse(data);
+            JObject ojObject = (JObject)joResponse;
+            dynamic jObj = JsonConvert.DeserializeObject(data);
 
-        }
 
-        private void btn_ingresar_Click(object sender, EventArgs e)
-        {
+            //record Person(string Name, string Occupation);
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            abrirForm(new Clientes(Contenedor));
         }
     }
 }
