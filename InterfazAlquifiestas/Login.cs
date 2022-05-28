@@ -12,42 +12,48 @@ namespace InterfazAlquifiestas
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             string user = usuario.Text;
-            string pass = contra.Text; 
-            
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:3000/");
-            HttpResponseMessage response = client.GetAsync("administradores").Result;
-            var data = response.Content.ReadAsStringAsync().Result;
+            string pass = contra.Text;
 
-            // Probando crear el Json
-            JObject joResponse = JObject.Parse(data);
-            JObject ojObject = (JObject)joResponse;
-            //MessageBox.Show(Convert.ToString(ojObject["admins"].Count));
-            dynamic jObj = JsonConvert.DeserializeObject(data);
-            // Recorriendo Data
-            var Us = false;
-            var Pas = false;
-
-            foreach (var item in joResponse["admins"])
+            try
             {
-                if (user == item["Usuario"].ToString() && pass == item["Password"].ToString())
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri("http://localhost:3000/");
+                HttpResponseMessage response = client.GetAsync("administradores").Result;
+                var data = response.Content.ReadAsStringAsync().Result;
+
+                // Probando crear el Json
+                JObject joResponse = JObject.Parse(data);
+                JObject ojObject = (JObject)joResponse;
+                //MessageBox.Show(Convert.ToString(ojObject["admins"].Count));
+                dynamic jObj = JsonConvert.DeserializeObject(data);
+                // Recorriendo Data
+                var Us = false;
+                var Pas = false;
+
+                foreach (var item in joResponse["admins"])
                 {
-                    Us = true;
-                    Pas = true;
-                }
-                
-            }
+                    if (user == item["Usuario"].ToString() && pass == item["Password"].ToString())
+                    {
+                        Us = true;
+                        Pas = true;
+                    }
 
-            if (Us && Pas)
+                }
+
+                if (Us && Pas)
+                {
+                    MessageBox.Show("Bienvenido!");
+                    Form formulario = new Form1();
+                    formulario.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("El nombre de usuario y/o contraseña no coinciden");
+                }
+            } catch (Exception ex)
             {
-                MessageBox.Show("Bienvenido!");
-                Form formulario = new Form1();
-                formulario.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("El nombre de usuario y/o contraseña no coinciden");
+                MessageBox.Show(ex.Message);
             }
         }
 

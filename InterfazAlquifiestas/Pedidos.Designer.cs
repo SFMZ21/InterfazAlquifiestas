@@ -35,11 +35,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.C_Pedidos = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dgv_Pedidos = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.ContenedorClientes.SuspendLayout();
             this.C_Pedidos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Pedidos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,6 +100,7 @@
             this.button3.Text = "Cancelar Pedido";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -113,27 +115,34 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(244, 81);
             this.button4.TabIndex = 7;
-            this.button4.Text = "Mostrar Pedido";
+            this.button4.Text = "Mostrar Pedidos";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // C_Pedidos
             // 
             this.C_Pedidos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.C_Pedidos.Controls.Add(this.label1);
+            this.C_Pedidos.Controls.Add(this.dgv_Pedidos);
             this.C_Pedidos.Location = new System.Drawing.Point(10, 109);
             this.C_Pedidos.Name = "C_Pedidos";
             this.C_Pedidos.Size = new System.Drawing.Size(994, 457);
             this.C_Pedidos.TabIndex = 1;
             // 
-            // label1
+            // dgv_Pedidos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(338, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AQUÍ VA LA TABLA DE CLIENTES";
+            this.dgv_Pedidos.AllowUserToAddRows = false;
+            this.dgv_Pedidos.AllowUserToDeleteRows = false;
+            this.dgv_Pedidos.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_Pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Pedidos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Pedidos.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Pedidos.Name = "dgv_Pedidos";
+            this.dgv_Pedidos.ReadOnly = true;
+            this.dgv_Pedidos.RowHeadersWidth = 51;
+            this.dgv_Pedidos.RowTemplate.Height = 29;
+            this.dgv_Pedidos.Size = new System.Drawing.Size(994, 457);
+            this.dgv_Pedidos.TabIndex = 0;
             // 
             // button1
             // 
@@ -166,7 +175,7 @@
             this.panel1.PerformLayout();
             this.ContenedorClientes.ResumeLayout(false);
             this.C_Pedidos.ResumeLayout(false);
-            this.C_Pedidos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Pedidos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -179,7 +188,7 @@
         private Button button3;
         private Button button4;
         private Panel C_Pedidos;
-        private Label label1;
         private Button button1;
+        private DataGridView dgv_Pedidos;
     }
 }

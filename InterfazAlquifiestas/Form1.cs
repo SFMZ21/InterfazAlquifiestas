@@ -53,7 +53,7 @@ namespace InterfazAlquifiestas
 
         private void btn_clientes_Click(object sender, EventArgs e)
         {
-            abrirForm(new Clientes());
+            abrirForm(new Clientes(Contenedor));
 
         }
 
@@ -72,5 +72,9 @@ namespace InterfazAlquifiestas
             abrirForm(new Estado_de_cuenta());
         }
 
+        private void Contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

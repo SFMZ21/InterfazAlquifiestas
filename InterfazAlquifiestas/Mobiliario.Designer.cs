@@ -30,20 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mobiliario));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.edit_mobiliario = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dgv_Mobiliario = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Mobiliario)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.edit_mobiliario);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.panel2);
@@ -53,21 +54,22 @@
             this.panel1.Size = new System.Drawing.Size(1044, 607);
             this.panel1.TabIndex = 0;
             // 
-            // button2
+            // edit_mobiliario
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(262, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 81);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.edit_mobiliario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.edit_mobiliario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.edit_mobiliario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.edit_mobiliario.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.edit_mobiliario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.edit_mobiliario.Image = ((System.Drawing.Image)(resources.GetObject("edit_mobiliario.Image")));
+            this.edit_mobiliario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.edit_mobiliario.Location = new System.Drawing.Point(262, 14);
+            this.edit_mobiliario.Name = "edit_mobiliario";
+            this.edit_mobiliario.Size = new System.Drawing.Size(244, 81);
+            this.edit_mobiliario.TabIndex = 10;
+            this.edit_mobiliario.Text = "Editar";
+            this.edit_mobiliario.UseVisualStyleBackColor = false;
+            this.edit_mobiliario.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button3
             // 
@@ -100,25 +102,31 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "   Mostrar ";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.dgv_Mobiliario);
             this.panel2.Location = new System.Drawing.Point(14, 116);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(992, 457);
             this.panel2.TabIndex = 9;
             // 
-            // label1
+            // dgv_Mobiliario
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(338, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AQUÍ VA LA TABLA DE MOBILIARIO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.dgv_Mobiliario.AllowUserToAddRows = false;
+            this.dgv_Mobiliario.AllowUserToDeleteRows = false;
+            this.dgv_Mobiliario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Mobiliario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Mobiliario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_Mobiliario.Location = new System.Drawing.Point(0, 0);
+            this.dgv_Mobiliario.Name = "dgv_Mobiliario";
+            this.dgv_Mobiliario.ReadOnly = true;
+            this.dgv_Mobiliario.RowHeadersWidth = 51;
+            this.dgv_Mobiliario.RowTemplate.Height = 29;
+            this.dgv_Mobiliario.Size = new System.Drawing.Size(992, 457);
+            this.dgv_Mobiliario.TabIndex = 0;
             // 
             // button1
             // 
@@ -147,7 +155,7 @@
             this.Text = "Mobiliario";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Mobiliario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -155,11 +163,11 @@
         #endregion
 
         private Panel panel1;
-        private Button button2;
+        private Button edit_mobiliario;
         private Button button3;
         private Button button4;
         private Panel panel2;
-        private Label label1;
         private Button button1;
+        private DataGridView dgv_Mobiliario;
     }
 }

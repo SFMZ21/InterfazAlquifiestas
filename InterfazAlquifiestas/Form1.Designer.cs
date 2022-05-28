@@ -323,6 +323,7 @@
             this.Contenedor.Name = "Contenedor";
             this.Contenedor.Size = new System.Drawing.Size(1012, 568);
             this.Contenedor.TabIndex = 2;
+            this.Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Contenedor_Paint);
             // 
             // Form1
             // 
@@ -353,7 +354,7 @@
         private Panel Titulo;
         private PictureBox btn_cerrar;
         private Panel MenuVertical;
-        private Panel Contenedor;
+        public Panel Contenedor;
         private PictureBox btn_min;
         private PictureBox btn_max;
         private PictureBox btn_restaurar;
