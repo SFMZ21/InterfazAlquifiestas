@@ -56,7 +56,6 @@
             // 
             // edit_mobiliario
             // 
-<<<<<<< HEAD
             this.edit_mobiliario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.edit_mobiliario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.edit_mobiliario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -71,7 +70,7 @@
             this.edit_mobiliario.Text = "Editar";
             this.edit_mobiliario.UseVisualStyleBackColor = false;
             this.edit_mobiliario.Click += new System.EventHandler(this.button2_Click_1);
-=======
+            /*
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -86,7 +85,7 @@
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
->>>>>>> d6e7121ee10c40971705212897f55dd52819df49
+            */
             // 
             // button3
             // 

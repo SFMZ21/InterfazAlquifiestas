@@ -133,10 +133,7 @@
             // 
             this.dgv_Pedidos.AllowUserToAddRows = false;
             this.dgv_Pedidos.AllowUserToDeleteRows = false;
-<<<<<<< HEAD
             this.dgv_Pedidos.BackgroundColor = System.Drawing.SystemColors.Control;
-=======
->>>>>>> d6e7121ee10c40971705212897f55dd52819df49
             this.dgv_Pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Pedidos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Pedidos.Location = new System.Drawing.Point(0, 0);
