@@ -144,9 +144,6 @@ namespace InterfazAlquifiestas
                     HttpResponseMessage response = client.DeleteAsync("mobiliario/eliminar/" + id).Result;
                     var data = response.Content.ReadAsStringAsync().Result;
 
-
-                    JObject joResponse = JObject.Parse(data);
-
                     this.Hide();
                 }
 
@@ -160,6 +157,8 @@ namespace InterfazAlquifiestas
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+
+
             abrirForm(new InsertarMobiliario());
         }
     }
