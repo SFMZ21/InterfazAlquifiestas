@@ -43,15 +43,15 @@ namespace InterfazAlquifiestas
 
         void abrirForm(Form Form)
         {
-            while (dgv_Mobiliario.Controls.Count > 0)
+            while (panel2.Controls.Count > 0)
             {
-                dgv_Mobiliario.Controls.RemoveAt(0);
+                panel2.Controls.RemoveAt(0);
             }
             Form formHijo = Form;
             Form.TopLevel = false;
             formHijo.FormBorderStyle = FormBorderStyle.None;
             formHijo.Dock = DockStyle.Fill;
-            dgv_Mobiliario.Controls.Add(formHijo);
+            panel2.Controls.Add(formHijo);
             formHijo.Show();
         }
 
@@ -104,7 +104,6 @@ namespace InterfazAlquifiestas
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            abrirForm(new EditarMobiliario());
 
 
             try
@@ -120,12 +119,43 @@ namespace InterfazAlquifiestas
                 var data = response.Content.ReadAsStringAsync().Result;
 
                 JObject joResponse = JObject.Parse(data);
-
-                MessageBox.Show(joResponse["mobiliario"].ToString());
+                abrirForm(new EditarMobiliario(joResponse));
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error");
             }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+
+                var confirmResult = MessageBox.Show("¿Seguro de que quieres eliminar el elemento seleccionado?", "Eliminar Elemento", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    int rowindex = dgv_Mobiliario.CurrentCell.RowIndex;
+                    int columnindex = dgv_Mobiliario.CurrentCell.ColumnIndex;
+
+                    string id = dgv_Mobiliario.Rows[rowindex].Cells[0].Value.ToString();
+
+                    HttpClient client = new HttpClient();
+                    client.BaseAddress = new Uri("http://localhost:3000/");
+                    HttpResponseMessage response = client.DeleteAsync("mobiliario/eliminar/" + id).Result;
+                    var data = response.Content.ReadAsStringAsync().Result;
+
+
+                    JObject joResponse = JObject.Parse(data);
+
+                    this.Hide();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Por favor revisa la seleccion.");
+            }
+
         }
     }
 }

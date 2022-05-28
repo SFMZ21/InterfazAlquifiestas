@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarMobiliario));
             this.C_Edit_Pedidos = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txb_cliente = new System.Windows.Forms.TextBox();
+            this.txb_estado = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_editar = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txb_IdPedido = new System.Windows.Forms.TextBox();
-            this.txb_fecha = new System.Windows.Forms.TextBox();
-            this.txb_direc = new System.Windows.Forms.TextBox();
+            this.txb_IdMobiliario = new System.Windows.Forms.TextBox();
+            this.txb_cantidad = new System.Windows.Forms.TextBox();
+            this.txb_idpedido = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
-            this.txb_desc = new System.Windows.Forms.TextBox();
+            this.txb_idMueble = new System.Windows.Forms.TextBox();
             this.C_Edit_Pedidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -51,17 +51,17 @@
             this.C_Edit_Pedidos.AutoScroll = true;
             this.C_Edit_Pedidos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.C_Edit_Pedidos.Controls.Add(this.label5);
-            this.C_Edit_Pedidos.Controls.Add(this.txb_cliente);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_estado);
             this.C_Edit_Pedidos.Controls.Add(this.pictureBox1);
             this.C_Edit_Pedidos.Controls.Add(this.btn_editar);
             this.C_Edit_Pedidos.Controls.Add(this.ID);
             this.C_Edit_Pedidos.Controls.Add(this.label2);
             this.C_Edit_Pedidos.Controls.Add(this.label1);
-            this.C_Edit_Pedidos.Controls.Add(this.txb_IdPedido);
-            this.C_Edit_Pedidos.Controls.Add(this.txb_fecha);
-            this.C_Edit_Pedidos.Controls.Add(this.txb_direc);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_IdMobiliario);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_cantidad);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_idpedido);
             this.C_Edit_Pedidos.Controls.Add(this.Nombre);
-            this.C_Edit_Pedidos.Controls.Add(this.txb_desc);
+            this.C_Edit_Pedidos.Controls.Add(this.txb_idMueble);
             this.C_Edit_Pedidos.Location = new System.Drawing.Point(6, 3);
             this.C_Edit_Pedidos.Name = "C_Edit_Pedidos";
             this.C_Edit_Pedidos.Size = new System.Drawing.Size(992, 492);
@@ -79,13 +79,13 @@
             this.label5.Text = "ID Mobiliario";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txb_cliente
+            // txb_estado
             // 
-            this.txb_cliente.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txb_cliente.Location = new System.Drawing.Point(582, 90);
-            this.txb_cliente.Name = "txb_cliente";
-            this.txb_cliente.Size = new System.Drawing.Size(340, 41);
-            this.txb_cliente.TabIndex = 1;
+            this.txb_estado.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_estado.Location = new System.Drawing.Point(582, 90);
+            this.txb_estado.Name = "txb_estado";
+            this.txb_estado.Size = new System.Drawing.Size(340, 41);
+            this.txb_estado.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -110,13 +110,14 @@
             this.btn_editar.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_editar.ForeColor = System.Drawing.Color.White;
             this.btn_editar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_editar.Location = new System.Drawing.Point(604, 384);
+            this.btn_editar.Location = new System.Drawing.Point(604, 358);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_editar.Size = new System.Drawing.Size(226, 60);
             this.btn_editar.TabIndex = 7;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = false;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // ID
             // 
@@ -151,30 +152,30 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Id Pedido";
             // 
-            // txb_IdPedido
+            // txb_IdMobiliario
             // 
-            this.txb_IdPedido.Enabled = false;
-            this.txb_IdPedido.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txb_IdPedido.Location = new System.Drawing.Point(71, 118);
-            this.txb_IdPedido.Name = "txb_IdPedido";
-            this.txb_IdPedido.Size = new System.Drawing.Size(256, 41);
-            this.txb_IdPedido.TabIndex = 0;
+            this.txb_IdMobiliario.Enabled = false;
+            this.txb_IdMobiliario.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_IdMobiliario.Location = new System.Drawing.Point(71, 118);
+            this.txb_IdMobiliario.Name = "txb_IdMobiliario";
+            this.txb_IdMobiliario.Size = new System.Drawing.Size(256, 41);
+            this.txb_IdMobiliario.TabIndex = 0;
             // 
-            // txb_fecha
+            // txb_cantidad
             // 
-            this.txb_fecha.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txb_fecha.Location = new System.Drawing.Point(582, 270);
-            this.txb_fecha.Name = "txb_fecha";
-            this.txb_fecha.Size = new System.Drawing.Size(340, 41);
-            this.txb_fecha.TabIndex = 4;
+            this.txb_cantidad.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_cantidad.Location = new System.Drawing.Point(582, 270);
+            this.txb_cantidad.Name = "txb_cantidad";
+            this.txb_cantidad.Size = new System.Drawing.Size(340, 41);
+            this.txb_cantidad.TabIndex = 4;
             // 
-            // txb_direc
+            // txb_idpedido
             // 
-            this.txb_direc.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txb_direc.Location = new System.Drawing.Point(582, 209);
-            this.txb_direc.Name = "txb_direc";
-            this.txb_direc.Size = new System.Drawing.Size(340, 41);
-            this.txb_direc.TabIndex = 3;
+            this.txb_idpedido.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_idpedido.Location = new System.Drawing.Point(582, 209);
+            this.txb_idpedido.Name = "txb_idpedido";
+            this.txb_idpedido.Size = new System.Drawing.Size(340, 41);
+            this.txb_idpedido.TabIndex = 3;
             // 
             // Nombre
             // 
@@ -187,13 +188,13 @@
             this.Nombre.TabIndex = 1;
             this.Nombre.Text = "Id Mueble";
             // 
-            // txb_desc
+            // txb_idMueble
             // 
-            this.txb_desc.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txb_desc.Location = new System.Drawing.Point(582, 148);
-            this.txb_desc.Name = "txb_desc";
-            this.txb_desc.Size = new System.Drawing.Size(340, 41);
-            this.txb_desc.TabIndex = 2;
+            this.txb_idMueble.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txb_idMueble.Location = new System.Drawing.Point(582, 148);
+            this.txb_idMueble.Name = "txb_idMueble";
+            this.txb_idMueble.Size = new System.Drawing.Size(340, 41);
+            this.txb_idMueble.TabIndex = 2;
             // 
             // EditarMobiliario
             // 
@@ -214,16 +215,16 @@
 
         private Panel C_Edit_Pedidos;
         private Label label5;
-        private TextBox txb_cliente;
+        private TextBox txb_estado;
         private PictureBox pictureBox1;
         private Button btn_editar;
         private Label ID;
         private Label label2;
         private Label label1;
-        private TextBox txb_IdPedido;
-        private TextBox txb_fecha;
-        private TextBox txb_direc;
+        private TextBox txb_IdMobiliario;
+        private TextBox txb_cantidad;
+        private TextBox txb_idpedido;
         private Label Nombre;
-        private TextBox txb_desc;
+        private TextBox txb_idMueble;
     }
 }
